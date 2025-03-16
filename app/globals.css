@@ -14,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1d1d1d;
+    --foreground: #cfcfcf;
   }
 }
 
@@ -23,4 +23,219 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.pag-principal-container {
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.header-principal {
+  background: #000;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-principal {
+  object-fit: contain;
+}
+
+.conteudo-principal {
+  padding: 2rem;
+  color: white;
+  padding-top: 8rem;
+}
+
+.titulo-principal {
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.subtitulo-principal {
+  font-size: 2.25rem; 
+  line-height: 2.5rem;
+  margin-top: 3rem;
+  color: #ef4444;
+}
+
+.botao-lista-carros {
+  display: inline-block;
+  margin-top: 3rem;
+  padding: 1.5rem 2rem;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.botao-lista-carros:hover {
+  background-color: #2563eb;
+}
+
+
+.lista-carros-container {
+  padding: 2rem;
+}
+
+.titulo-lista-carros {
+  font-size: 2.25rem; 
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.lista-carros {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-carros > * + * {
+  margin-top: 2rem;
+}
+
+.item-carro {
+  border: 1px solid #e5e7eb;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.detalhes-carro-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.imagem-carro {
+  width: 16rem;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.detalhes-carro h2 {
+  font-size: 1.5rem; 
+  font-weight: 700;
+}
+
+.ano-carro,
+.preco-carro {
+  color: #4b5563;
+  margin-top: 0.5rem;
+}
+
+.botao-detalhes {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.botao-detalhes:hover {
+  background-color: #2563eb;
+}
+
+
+.logo-link {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.logo-link:hover {
+  opacity: 0.8;
+}
+
+
+.pagina-detalhes-container {
+  min-height: 100vh;
+}
+
+.conteudo-detalhes {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.titulo-detalhes {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #949494;
+}
+
+.detalhes-carro-container {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.imagem-detalhes {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.informacoes-detalhes {
+  flex: 1;
+}
+
+.dado-carro {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.destaque-detalhes {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+
+.botao-detalhes {
+  
+  margin-top: 2rem;
+}
+
+
+.footer-container {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #3b82f6;
+  margin-top: auto;
+}
+
+.footer-left p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-logo-space {
+  width: 150px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-placeholder {
+  width: 130px;
+  height: 40px;
+  border: 1px dashed rgba(255, 255, 255, 0.3);
 }
